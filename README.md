@@ -34,11 +34,11 @@ git push
 # create PR
 ```
 
-[circleci-image]: https://circleci.com/gh/unional/iso-path/tree/master.svg?style=shield
-[circleci-url]: https://circleci.com/gh/unional/iso-path/tree/master
-[codecov-image]: https://codecov.io/gh/unional/iso-path/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/unional/iso-path
-[coveralls-image]: https://coveralls.io/repos/github/unional/iso-path/badge.svg?branch=master
+[circleci-image]: https://circleci.com/gh/cyberuni/iso-path/tree/master.svg?style=shield
+[circleci-url]: https://circleci.com/gh/cyberuni/iso-path/tree/master
+[codecov-image]: https://codecov.io/gh/cyberuni/iso-path/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/cyberuni/iso-path
+[coveralls-image]: https://coveralls.io/repos/github/cyberuni/iso-path/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/unional/iso-path?branch=master
 [downloads-image]: https://img.shields.io/npm/dm/iso-path.svg?style=flat
 [downloads-url]: https://npmjs.org/package/iso-path
@@ -48,7 +48,7 @@ git push
 [npm-url]: https://npmjs.org/package/iso-path
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
-[travis-image]: https://img.shields.io/travis/unional/iso-path/master.svg?style=flat
+[travis-image]: https://img.shields.io/travis/cyberuni/iso-path/master.svg?style=flat
 [travis-url]: https://travis-ci.org/unional/iso-path?branch=master
 [unstable-image]: https://img.shields.io/badge/stability-unstable-yellow.svg
 [vscode-image]: https://img.shields.io/badge/vscode-ready-green.svg
