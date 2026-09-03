@@ -1,14 +1,14 @@
 {
-  "name": "@unional/iso-path",
+  "name": "@cyberuni/iso-path",
   "version": "0.0.1",
   "description": "Isomorphic path utility.",
-  "homepage": "https://github.com/unional/iso-path",
+  "homepage": "https://github.com/cyberuni/iso-path",
   "bugs": {
-    "url": "https://github.com/unional/iso-path/issues"
+    "url": "https://github.com/cyberuni/iso-path/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/iso-path.git"
+    "url": "https://github.com/cyberuni/iso-path.git"
   },
   "license": "MIT",
   "author": {
