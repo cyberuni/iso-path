@@ -5,9 +5,11 @@ on:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/yarn2-library-verify-linux.yml@main
+    uses: justland/.github/.github/workflows/pnpm-verify.yml@main
+    with:
+      os: '["ubuntu-latest"]'
 
   release:
-    uses: justland/.github/.github/workflows/yarn2-library-release.yml@main
+    uses: justland/.github/.github/workflows/pnpm-release-changeset.yml@main
     needs: code
     secrets: inherit
