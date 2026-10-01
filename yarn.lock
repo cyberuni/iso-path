@@ -3583,7 +3583,7 @@ __metadata:
     husky: "npm:^9.0.0"
     jest: "npm:^30.0.0"
     jest-validate: "npm:^30.0.0"
-    jest-watch-suspend: "npm:^1.1.2"
+    jest-watch-suspend: "npm:^2.0.0"
     jest-watch-toggle-config: "npm:^3.0.0"
     jest-watch-typeahead: "npm:^3.0.0"
     npm-run-all2: "npm:^9.0.0"
@@ -4296,7 +4296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^2.0.0, chalk@npm:^2.4.2":
+"chalk@npm:^2.0.0":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -6350,15 +6350,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-watch-suspend@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "jest-watch-suspend@npm:1.1.2"
+"jest-watch-suspend@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "jest-watch-suspend@npm:2.0.0"
   dependencies:
-    chalk: "npm:^2.4.2"
-    unpartial: "npm:^0.6.1"
+    chalk: "npm:^4.1.2"
+    unpartial: "npm:^1.0.6"
   peerDependencies:
-    jest: ">=23"
-  checksum: 10c0/b29a8d1ee08a116b093b082c85692151ea861684c37e57fb10add503e4ffbdf10906e0494c823c37fc5b4a0350d58d89f694bda2c2e1d3522cb754b8fdaaedb5
+    jest: ">=28"
+  checksum: 10c0/3f31e94f5db65156a80bd2986cc13eb7373fd55f1ffd023cd5d9b9d7eb9eff8a599c6ebdf78d1e55f8016308c79ebeecd78318b34faa85f1b670a7c6fda1d70d
   languageName: node
   linkType: hard
 
@@ -8302,10 +8302,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unpartial@npm:^0.6.1":
-  version: 0.6.4
-  resolution: "unpartial@npm:0.6.4"
-  checksum: 10c0/8a94d820cb69516038e3b3596ce636ce8971ddda4c789d21943c941fc27c572302b9e3c336946f5a569d0c3885a28786c688ecbb9a6c3377d437e1c2d204fec4
+"unpartial@npm:^1.0.6":
+  version: 1.0.8
+  resolution: "unpartial@npm:1.0.8"
+  checksum: 10c0/27f2fac37faf62047b6b1cf705c98174ba21af60e214b839e2a4b7c4a7cba01c12add56bd2abd728c48468524828e852aa8374cb8eca9a88aaf0cfe2f037f3d0
   languageName: node
   linkType: hard
 
