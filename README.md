@@ -3,17 +3,9 @@
 ![unstable][unstable-image]
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
-
-[![Circle CI][circleci-image]][circleci-url]
-[![Travis CI][travis-image]][travis-url]
-[![Codecov][codecov-image]][codecov-url]
-[![Coveralls Status][coveralls-image]][coveralls-url]
-
-[![Greenkeeper][greenkeeper-image]][greenkeeper-url]
-[![Semantic Release][semantic-release-image]][semantic-release-url]
+[![release][release-image]][release-url]
 
 [![Visual Studio Code][vscode-image]][vscode-url]
-[![Wallaby.js][wallaby-image]][wallaby-url]
 
 Isomorphic path utility.
 
@@ -21,37 +13,27 @@ Isomorphic path utility.
 
 ```sh
 # after fork and clone
-npm install
+pnpm install
 
 # begin making changes
 git checkout -b <branch>
-npm run watch
+pnpm watch
 
 # after making change(s)
+pnpm verify
+pnpm cs   # add a changeset if the published package changes
 git commit -m "<commit message>"
 git push
 
 # create PR
 ```
 
-[circleci-image]: https://circleci.com/gh/unional/iso-path/tree/master.svg?style=shield
-[circleci-url]: https://circleci.com/gh/unional/iso-path/tree/master
-[codecov-image]: https://codecov.io/gh/unional/iso-path/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/unional/iso-path
-[coveralls-image]: https://coveralls.io/repos/github/unional/iso-path/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/unional/iso-path?branch=master
-[downloads-image]: https://img.shields.io/npm/dm/iso-path.svg?style=flat
-[downloads-url]: https://npmjs.org/package/iso-path
-[greenkeeper-image]: https://badges.greenkeeper.io/unional/iso-path.svg
-[greenkeeper-url]: https://greenkeeper.io/
-[npm-image]: https://img.shields.io/npm/v/iso-path.svg?style=flat
-[npm-url]: https://npmjs.org/package/iso-path
-[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-url]: https://github.com/semantic-release/semantic-release
-[travis-image]: https://img.shields.io/travis/unional/iso-path/master.svg?style=flat
-[travis-url]: https://travis-ci.org/unional/iso-path?branch=master
+[downloads-image]: https://img.shields.io/npm/dm/@unional/iso-path.svg?style=flat
+[downloads-url]: https://npmjs.org/package/@unional/iso-path
+[npm-image]: https://img.shields.io/npm/v/@unional/iso-path.svg?style=flat
+[npm-url]: https://npmjs.org/package/@unional/iso-path
+[release-image]: https://github.com/cyberuni/iso-path/actions/workflows/release.yml/badge.svg
+[release-url]: https://github.com/cyberuni/iso-path/actions/workflows/release.yml
 [unstable-image]: https://img.shields.io/badge/stability-unstable-yellow.svg
 [vscode-image]: https://img.shields.io/badge/vscode-ready-green.svg
 [vscode-url]: https://code.visualstudio.com/
-[wallaby-image]: https://img.shields.io/badge/wallaby.js-configured-green.svg
-[wallaby-url]: https://wallabyjs.com
