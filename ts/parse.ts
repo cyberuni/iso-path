@@ -25,7 +25,6 @@
 //   }
 // }
 
-
 // function extractServername(pathString: string) {
 //   if (!pathString.startsWith('\\\\')) return { servername: '', serverlessPath: pathString }
 

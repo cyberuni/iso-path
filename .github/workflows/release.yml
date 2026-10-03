@@ -5,9 +5,33 @@ on:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/yarn2-library-verify-linux.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
+    with:
+      os: '["ubuntu-latest"]'
+      skip-playwright: true
+      skip-codecov: true
 
-  release:
-    uses: justland/.github/.github/workflows/yarn2-library-release.yml@main
+  # Packs the working tree and diffs it against the registry, blocking files that must
+  # never ship and unexpected new runtime dependencies. It runs here as a `needs:` of
+  # release rather than on the Version Packages PR: that PR is opened with GITHUB_TOKEN,
+  # so `on: pull_request` never fires for it and a gate placed there would never run.
+  publish-gate:
+    uses: cyberuni/.github/.github/workflows/pnpm-publish-gate.yml@main
     needs: code
-    secrets: inherit
+    permissions:
+      contents: read
+
+  # changesets, not semantic-release: a push to main only opens or updates the
+  # "Version Packages" PR, so nothing reaches npm until that PR is merged.
+  #
+  # Secretless: GITHUB_TOKEN for the version PR, npm trusted publishing (OIDC) to
+  # publish. No CI_GITHUB_TOKEN or NPM_TOKEN, so nothing to rotate or silently expire.
+  release:
+    uses: cyberuni/.github/.github/workflows/pnpm-release-changeset-oidc.yml@main
+    needs: [code, publish-gate]
+    # Declaring `permissions:` replaces the default, so every scope the callee needs must
+    # be listed here — unlisted ones drop to `none`, not to the default.
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write

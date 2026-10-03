@@ -2,7 +2,21 @@ name: pull-request
 on:
   pull_request:
     types: [opened, synchronize]
+  # The merge queue builds a temporary branch that fires neither `pull_request` nor
+  # `push`, so without this trigger the required `code / all-checks` context never
+  # starts and the queue waits on it forever.
+  merge_group:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/yarn2-library-verify-linux.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
+    with:
+      # cyberuni's default matrix is 3 OS x 2 Node. This is a small pure-TS library with
+      # no platform-specific behaviour, so ubuntu alone is the honest coverage and keeps
+      # the queue fast. It also sidesteps that workflow's unconditional Xvfb step, which
+      # has no counterpart on the macOS and Windows runners.
+      os: '["ubuntu-latest"]'
+      # No browser tests — vitest runs in node.
+      skip-playwright: true
+      # Codecov is not wired up for this repo. The upload gates nothing either way.
+      skip-codecov: true

@@ -1,4 +1,6 @@
-test.skip('no test yet', () => { return })
+test.skip('no test yet', () => {
+	return
+})
 // import a from 'assertron';
 // import { parse } from './parse';
 

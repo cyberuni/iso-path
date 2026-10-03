@@ -1,15 +1,17 @@
+parsers:
+  "**/*.cjs": "es6"
+  "**/*.mjs": "es6"
+  "**/*.ts": "typescript"
 ignores:
-  - '@types/node'
-  - "@commitlint/*"
-  - "@size-limit/preset-small-lib"
-  - "@types/jest"
-  - "babel-jest"
-  - "jest-junit"
-  - typedoc
-  - typedoc-plugin-extras
-  - "@eslint/js"
-  - eslint-plugin-harmony
+  # Resolved by name from config rather than imported, so depcheck cannot see them.
+  - "@commitlint/config-conventional"
+  - "@repobuddy/biome"
+  - "@types/node"
+  - "@vitest/coverage-v8"
+  # Used only as bins in package.json scripts or git hooks.
+  - "@biomejs/biome"
+  - "@changesets/cli"
+  - "@commitlint/cli"
   - husky
-  - jest-validate
-  - typescript
-  - typescript-eslint
+  - npm-run-all2
+  - rimraf
